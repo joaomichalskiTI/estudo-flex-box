@@ -14,17 +14,21 @@
         }
         h1{
             color: bisque;
+            font-family: 'Edo SZ', sans-serif;
         }
     </style>
     <h1>Olá, mundo!</h1>
     <p>Estudando JavaScript</p>
     <script>
 
-        var n1 = window.prompt('Digite um numero'); //Retorna uma string
-    var n2 = window.prompt('Digite outro numero'); //Retorna uma string
-    var soma = n1 + n2;
+        var n1 = Number(window.prompt('Digite um numero')); //Retorna uma string. Quando é usado '',Retornará como numero.
+        var n2 = Number(window.prompt('Digite outro numero')); //Retorna uma string
+        var s = n1 + n2;
+        
 
-    window.alert('a soma total é ' + soma);
+    window.alert('a soma total é ' + String(s));
+    /*Aqui estou convertendo um number para string. existem 2 formas de fazer isso.
+    a primeira é como está no código acima e a segunda forma é: s.toString().*/
 
     /*window.prompt sempre irá retornar uma string, e por esse motivo
     que quando for somar 'n1' e 'n2' ele irá retornar com os numeros 
@@ -32,7 +36,7 @@
     nesse caso o simblo de '+' é usado para concatenação, que é justamente
     a junção de duas ou mais strings para formar apenas uma.*/
 
-    
     </script>
+    
 </body>
 </html>
